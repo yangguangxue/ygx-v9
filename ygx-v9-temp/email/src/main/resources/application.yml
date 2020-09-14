@@ -1,0 +1,7 @@
+spring:
+  mail:
+    host: smtp.163.com
+    username: ygx15675453227@163.com
+    password: ABEUWDHJMAWUSQBU
+mail:
+  address: ygx15675453227@163.com

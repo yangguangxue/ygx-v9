@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.13.129:3306/miaosha?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&allowMultiQueries=true
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+  redis:
+    host: 192.168.13.129
+    password: ygx
+  rabbitmq:
+    host: 192.168.13.129
+    port: 5672
+    password: 123
+    username: ygx
+    virtual-host: /ygx
+    listener:
+      simple:
+        prefetch: 1
+        acknowledge-mode: manual
+
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+
